@@ -1,0 +1,118 @@
+.matches {
+  background-image: linear-gradient(359.94deg, #6ddbf5 -1.64%, #603dde 89.87%);
+  height: max(100vh);
+}
+
+.header {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 40px;
+  color: #fff;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.matchesInfo {
+  background: #fff;
+  width: min(850px, 90%);
+  margin: 0 auto;
+  border-radius: 30px;
+  padding-bottom: 20px;
+}
+
+.matchesInfo .title {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 30px;
+  padding: 20px 0;
+}
+
+.matchesList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 40px 0;
+}
+
+.match {
+  box-shadow: 0px 2px 8px 4px rgb(183 188 244);
+  width: min(394px, 90%);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 67px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  margin: 10px auto;
+}
+
+.match .matchId {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  margin-left: 30px;
+}
+
+.match .matchInfo {
+  height: 60px;
+  background: linear-gradient(92.78deg, #eb3349 -0.35%, #f45c43 98.87%);
+  border-radius: 19px;
+  width: 208px;
+  color: #fff;
+  display: grid;
+  align-items: center;
+}
+
+.match .teams {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.match .time {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.addMatch {
+  background-image: linear-gradient(359.94deg, #d94058 -1.64%, #892bc2 89.87%);
+  border-radius: 16px;
+  width: 265px;
+  height: 71px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.addMatch > div {
+  background: #211f58;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  width: 257px;
+  height: 63px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.addMatch > div > img {
+  height: 20px;
+}
+
+.addMatch > div > p {
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+}
