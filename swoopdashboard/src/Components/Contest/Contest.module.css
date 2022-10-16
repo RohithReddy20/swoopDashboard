@@ -1,0 +1,105 @@
+.contest {
+  background-image: linear-gradient(359.94deg, #6ddbf5 -1.64%, #603dde 89.87%);
+  padding-bottom: 60px;
+}
+
+.header {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 40px;
+  color: #fff;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.formL {
+  width: min(800px, 90%);
+  background: #edf2f7;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.contestForm{
+    margin-bottom: 20px;
+}
+
+.contestForm > div {
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  border-radius: 16px;
+  width: min(400px, 90%);
+  margin: 10px auto;
+  padding: 15px 10px;
+}
+
+.child {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.child label {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.child input {
+  height: 44px;
+  border: 1.5px solid rgba(49, 54, 120, 0.2);
+  border-radius: 60px;
+  padding-left: 20px;
+}
+
+.child input:focus{
+    outline: none;
+}
+
+.addMatch,
+.winners {
+  border-radius: 70px;
+  width: 300px;
+  height: 54px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.winners {
+  background: #4074fa;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.addMatch {
+  background-image: linear-gradient(160.94deg, #d94058 -1.64%, #892bc2 89.87%);
+}
+
+.addMatch > div {
+  background: #211f58;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 70px;
+  width: 294px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addMatch > div > p, .winners {
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+}

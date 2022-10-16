@@ -4,3 +4,7 @@
   text-align: center;
   font-family: 'Manrope', sans-serif !important;
 }
+
+.MuiBox-root[class*="css"]:focus{
+  outline: 0 !important;
+}
