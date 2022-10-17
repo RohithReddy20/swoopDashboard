@@ -1,12 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from "./Login.module.css";
 
 import logo from "../../images/swooplogo.svg"
 
 function Login() {
 
+  const navigate = useNavigate();
+
   const handleForm = (e) => {
     e.preventDefault();
+    navigate("/matches");
   }
   return (
     <div className={styles.login}>
@@ -20,7 +24,7 @@ function Login() {
         <div className={styles.loginP}>
           <div>Login</div>
           <div className="form">
-            <form action={handleForm}>
+            <form onSubmit={handleForm}>
               <input type="text" placeholder="Enter Mobile No" />
               <div><input type="submit" value="LOGIN" /></div>
             </form>

@@ -119,6 +119,7 @@
   color: #6e6d7a;
   box-sizing: border-box;
   padding: 0 10px;
+  text-align: center;
 }
 
 .creditB {
@@ -134,7 +135,7 @@
   border: none;
   border-radius: 11px;
   color: #fff;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 14px;
   line-height: 19px;
   letter-spacing: 0.01em;

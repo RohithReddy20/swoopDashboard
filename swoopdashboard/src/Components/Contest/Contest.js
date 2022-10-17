@@ -1,12 +1,14 @@
 import React from "react";
 import styles from "./Contest.module.css";
 import leftArrow from "../../images/leftArrow.svg";
+import { useNavigate } from "react-router-dom";
 
 function Contest() {
+    const navigate = useNavigate();
   return (
     <div class={styles.contest}>
       <div className={styles.header}>
-        <img src={leftArrow} alt="left" />
+      <img src={leftArrow} alt="left" onClick={() => window.history.back()}/>
         Contest ID 1
       </div>
       <div className={styles.formL}>
@@ -40,7 +42,9 @@ function Contest() {
                 </div>
             </div>
           </form>
-          <div className={styles.addMatch}>
+          <div className={styles.addMatch} onClick={() => {
+            navigate("/leaderBoard")
+          }}>
                 <div>
                     <p>LEADERBOARD</p>
                 </div>
