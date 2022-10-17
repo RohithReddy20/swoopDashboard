@@ -24,7 +24,7 @@ function LeaderBoard() {
   return (
     <div className={`${styles.leaderBoard} leaderBoard`}>
       <div className={styles.header}>
-        <img src={leftArrow} alt="left" />
+        <img src={leftArrow} alt="left" onClick={() => window.history.back()}/>
         Contest ID 1
       </div>
       <div className={styles.leaderBoardInfo}>
