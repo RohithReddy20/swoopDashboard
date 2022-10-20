@@ -1,16 +1,25 @@
-import React from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from "./Login.module.css";
+
+import { useAuth } from '../../hooks/useAuth';
+
 
 import logo from "../../images/swooplogo.svg"
 
 function Login() {
 
+  const { userName, password, setUserName, setPassword, setUser, user, login } = useAuth();
+  const [disabled, setDisabled] = useState(false);
+
   const navigate = useNavigate();
 
-  const handleForm = (e) => {
+
+  const handleForm = async (e) => {
+    setDisabled(true);
     e.preventDefault();
-    navigate("/matches");
+    login()
+    setDisabled(false);
   }
   return (
     <div className={styles.login}>
@@ -25,8 +34,9 @@ function Login() {
           <div>Login</div>
           <div className="form">
             <form onSubmit={handleForm}>
-              <input type="text" placeholder="Enter Mobile No" />
-              <div><input type="submit" value="LOGIN" /></div>
+              <input type="text" onChange={(e) => {setUserName(e.target.value)}}  placeholder="username" />
+              <input type="text" onChange={(e) => {setPassword(e.target.value)}}  placeholder="password" />
+              <div><input type="submit" value="LOGIN" disabled={disabled} /></div>
             </form>
           </div>
         </div>
