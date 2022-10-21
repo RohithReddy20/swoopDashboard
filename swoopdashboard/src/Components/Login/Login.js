@@ -34,14 +34,14 @@ function Login() {
           <div>Login</div>
           <div className="form">
             <form onSubmit={handleForm}>
-              <input type="text" onChange={(e) => {setUserName(e.target.value)}}  placeholder="username" />
-              <input type="text" onChange={(e) => {setPassword(e.target.value)}}  placeholder="password" />
+              <input type="text" onChange={(e) => {setUserName(e.target.value)}}  placeholder="Enter Email" />
+              <input type="text" onChange={(e) => {setPassword(e.target.value)}}  placeholder="Password" />
               <div><input type="submit" value="LOGIN" disabled={disabled} /></div>
             </form>
           </div>
         </div>
         <div className={styles.footer}>
-          By Signing up, I agree to the Terms & Conditions and Privacy Policy of Swoop
+          By Signing in, You agree to the Terms & Conditions and Privacy Policy of Swoop.
         </div>
     </div>
   )

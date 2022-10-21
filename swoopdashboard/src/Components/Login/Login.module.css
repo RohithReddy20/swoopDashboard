@@ -17,13 +17,14 @@
 }
 
 .title {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 60px;
+  font-weight: 800;
 }
 
 .title > div {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 800;
+  letter-spacing: 0.2em;
 }
 
 .loginP form input {
@@ -32,23 +33,25 @@
   margin: 5px 0;
 }
 
-.loginP>div{
-    margin: 15px 0;
+.loginP > div {
+  margin: 15px 0;
+  font-weight: 700;
+  font-size: 30px;
 }
 
-.loginP input{
-    border: none;
+.loginP input {
+  border: none;
 }
 
-.loginP input:focus{
-    outline: none;
+.loginP input:focus {
+  outline: none;
 }
 
 .loginP form > input {
   height: 50px;
   padding-left: 30px;
-    box-sizing: border-box;
-    margin: 5px;
+  box-sizing: border-box;
+  margin: 5px;
 }
 
 .loginP form div > input {

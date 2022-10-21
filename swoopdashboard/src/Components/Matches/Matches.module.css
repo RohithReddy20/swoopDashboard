@@ -1,40 +1,10 @@
-.matches {
-  background-image: linear-gradient(359.94deg, #6ddbf5 -1.64%, #603dde 89.87%);
-  height: max(100vh);
-}
-
-.header {
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 30px;
-  margin-bottom: 20px;
-}
-
-.header div {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-}
-
-.header p {
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 40px;
-  color: #fff;
-}
-
-.logo img[alt="logo"] {
-  height: 50px;
-}
 
 .matchesInfo {
   background: #fff;
-  width: min(850px, 90%);
   margin: 0 auto;
   border-radius: 30px;
   padding-bottom: 20px;
+  height: 100%;
 }
 
 .matchesInfo .title {
@@ -46,43 +16,74 @@
 
 .matchesList {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
   padding: 10px 0 40px 0;
 }
 
 .match {
-      box-shadow: 0px 2px 8px 4px rgb(183 188 244);
-  width: min(394px, 90%);
+      box-shadow: 0px 2px 8px 0px rgb(183 188 244);
+  /* width: min(394px, 90%); */
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 67px;
-  padding: 0 5px;
   box-sizing: border-box;
   margin: 10px auto;
+}
+
+.match > div{
+  margin: 0 5px;
 }
 
 .match .matchId {
   font-weight: 800;
   font-size: 16px;
   line-height: 22px;
-  margin-left: 30px;
+  margin: 0 50px 0 30px;
 }
 
-.match .matchInfo {
+.matchInfo, .msP, .cwl, .vwl, .ub, .cp{
   height: 60px;
-  background: #4074fa;
   border-radius: 19px;
-  width: 208px;
   color: #fff;
   display: grid;
   align-items: center;
 }
 
-.match .teams {
+.matchInfo {
+  background: #4074fa;
+  width: 208px;
+}
+
+.msP{
+  width: 123px;
+  background: #44429F;
+}
+
+.cwl{
+  width: 131px;
+  background: linear-gradient(312.63deg, #7928B9 20.94%, #E39217 85.1%);
+}
+
+.vwl{
+  width: 123px;
+  background: linear-gradient(92.78deg, #EB3349 -0.35%, #F45C43 98.87%);
+}
+
+.ub{
+  width: 89px;
+  background: linear-gradient(159.13deg, #D94058 22.85%, #892BC2 94.83%);
+}
+
+.cp{
+  width: 89px;
+  background: linear-gradient(111.72deg, #039900 -13.49%, #A7EE33 123.47%);
+}
+
+.teams {
   font-weight: 800;
   font-size: 16px;
   line-height: 22px;
@@ -96,7 +97,7 @@
 
 .addMatch {
   background-image: linear-gradient(359.94deg, #d94058 -1.64%, #892bc2 89.87%);
-  border-radius: 16px;
+  border-radius: 48px;
   width: 265px;
   height: 71px;
   display: flex;
@@ -108,7 +109,7 @@
 .addMatch > div {
   background: #211f58;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 16px;
+  border-radius: 48px;
   width: 257px;
   height: 63px;
   color: #fff;
@@ -119,7 +120,7 @@
 }
 
 .addMatch > div >img{
-    height: 20px;
+    height: 25px;
 }
 
 .addMatch > div > p{
