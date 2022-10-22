@@ -16,7 +16,7 @@ const style = {
   transform: 'translate(-50%, -50%)'
 };
 
-function LeaderBoard() {
+function Winner() {
   const [openCredit, setOpenCredit] = useState(false);
   const handleOpenCredit = () => {
     setOpenCredit(true);
@@ -32,7 +32,7 @@ function LeaderBoard() {
         <img src={prev} alt="left" onClick={() => window.history.back()} />
           <Navbar />
         </div>
-        <div className={styles.title}>LEADERBOARD</div>
+        <div className={styles.winners}>WINNERS</div>
       </div>
       <div className={styles.leaderBoardInfo}>
       <div className={Cstyles.contestName}> Contest Id 1</div>
@@ -88,10 +88,15 @@ function LeaderBoard() {
             </div>
           </div>
         </div>
-        <div style={{margin: "30px auto"}} className={styles.winners}>WINNERS</div>
+        <div className={styles.credit} onClick={handleOpenCredit}>CREDIT WINNERS</div>
+        <Modal open={openCredit} onClose={handleCloseCredit}>
+          <Box sx={style}>
+          <Credit handleCloseCredit={handleCloseCredit} />
+          </Box>
+        </Modal>
       </div>
     </div>
   );
 }
 
-export default LeaderBoard;
+export default Winner;

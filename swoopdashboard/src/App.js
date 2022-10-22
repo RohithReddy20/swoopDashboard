@@ -8,6 +8,7 @@ import LeaderBoard from './Components/LeaderBoard/LeaderBoard';
 import { AuthProvider } from './hooks/useAuth';
 
 import { ProtectedRoute } from './Components/ProtectedRoute/ProtectedRoute';
+import Winner from './Components/LeaderBoard/Winner';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/contests" element={<ProtectedRoute><Contests /></ProtectedRoute> } />
           <Route exact path="/contest" element={<ProtectedRoute><Contest /></ProtectedRoute>} />
           <Route exact path="/leaderBoard" element={<ProtectedRoute><LeaderBoard /></ProtectedRoute>} />
+          <Route exact path="/winners" element={<ProtectedRoute><Winner /></ProtectedRoute>} />
         </Routes>
         </AuthProvider>
     </div>
