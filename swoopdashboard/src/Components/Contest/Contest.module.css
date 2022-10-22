@@ -1,6 +1,6 @@
 .contest {
   background-image: linear-gradient(359.94deg, #6ddbf5 -1.64%, #603dde 89.87%);
-  padding-bottom: 60px;
+  background: #edf2f7;
 }
 
 .header {
@@ -12,21 +12,36 @@
   padding-top: 20px;
   height: 60px;
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 20px;
+  margin-left: 30px;
 }
 
 .formL {
-  width: min(800px, 90%);
   background: #edf2f7;
   border-radius: 30px;
   padding: 20px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .contestForm{
     margin-bottom: 20px;
+}
+
+.contestName{
+  background: #C4D4FC;
+  border: 3px solid #698FF0;
+  border-radius: 44px;
+  width: 300px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #323E67;
+  font-size: 25px;
+  font-weight: 800;
+  margin: 10px auto 30px auto;
 }
 
 .contestForm > div {
@@ -34,9 +49,12 @@
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
   border-radius: 16px;
-  width: min(400px, 90%);
+  width: 70%;
   margin: 10px auto;
   padding: 15px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
 .child {
@@ -60,6 +78,10 @@
   border: 1.5px solid rgba(49, 54, 120, 0.2);
   border-radius: 60px;
   padding-left: 20px;
+}
+
+.child input:read-only{
+  background-color: #dcdcdc;
 }
 
 .child input:focus{

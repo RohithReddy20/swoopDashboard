@@ -1,15 +1,16 @@
 import React from 'react';
 import styles from "./Contests.module.css";
 import plus from "../../images/plus.svg";
-import leftArrow from "../../images/leftArrow.svg";
 import {useNavigate} from "react-router-dom";
+import prev from "../../images/prev.svg";
+import Navbar from "../Navbar/Navbar"
 
 function Contests() {
     const navigate = useNavigate();
   return (
     <div className={styles.matches}>
         <div className={styles.header}>
-        <img src={leftArrow} alt="left" onClick={() => window.history.back()}/>Match ID 1
+        <img src={prev} alt="left" onClick={() => window.history.back()}/><Navbar />
         </div>
         <div className={styles.matchesInfo}>
             <div className={styles.title}>Active Contests</div>

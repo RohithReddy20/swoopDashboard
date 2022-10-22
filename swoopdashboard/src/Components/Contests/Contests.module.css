@@ -12,17 +12,18 @@
   padding-top: 20px;
   height: 60px;
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 20px;
+  margin-left: 30px;
 }
 
+
 .matchesInfo {
-  background: #fff;
-  width: min(850px, 90%);
+  background: #edf2f7;
   margin: 0 auto;
   border-radius: 30px;
   padding-bottom: 20px;
+  height: 100%;
 }
 
 .matchesInfo .title {
@@ -34,43 +35,51 @@
 
 .matchesList {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
   padding: 10px 0 40px 0;
 }
 
 .match {
-  box-shadow: 0px 2px 8px 4px rgb(183 188 244);
-  width: min(394px, 90%);
+      box-shadow: 0px 2px 8px 0px rgb(183 188 244);
+  width: max(394px, 80%);
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 67px;
-  padding: 0 5px;
   box-sizing: border-box;
   margin: 10px auto;
+}
+
+.match > div{
+  margin: 0 5px;
 }
 
 .match .matchId {
   font-weight: 800;
   font-size: 16px;
   line-height: 22px;
-  margin-left: 30px;
+  margin: 0 50px 0 30px;
+  width: calc(100% - 208px);
 }
 
-.match .matchInfo {
+.matchInfo{
   height: 60px;
-  background: linear-gradient(92.78deg, #eb3349 -0.35%, #f45c43 98.87%);
   border-radius: 19px;
-  width: 208px;
   color: #fff;
   display: grid;
   align-items: center;
+  width: 208px;
 }
 
-.match .teams {
+.matchInfo {
+  background: linear-gradient(92.78deg, #EB3349 -0.35%, #F45C43 98.87%);
+  width: 208px;
+}
+
+.teams {
   font-weight: 800;
   font-size: 16px;
   line-height: 22px;
@@ -84,7 +93,7 @@
 
 .addMatch {
   background-image: linear-gradient(359.94deg, #d94058 -1.64%, #892bc2 89.87%);
-  border-radius: 16px;
+  border-radius: 48px;
   width: 265px;
   height: 71px;
   display: flex;
@@ -96,7 +105,7 @@
 .addMatch > div {
   background: #211f58;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 16px;
+  border-radius: 48px;
   width: 257px;
   height: 63px;
   color: #fff;
@@ -106,15 +115,15 @@
   gap: 10px;
 }
 
-.addMatch > div > img {
-  height: 20px;
+.addMatch > div >img{
+    height: 25px;
 }
 
-.addMatch > div > p {
-  font-weight: 800;
-  font-size: 21px;
-  line-height: 29px;
-  letter-spacing: 0.1em;
+.addMatch > div > p{
+    font-weight: 800;
+font-size: 21px;
+line-height: 29px;
+letter-spacing: 0.1em;
 }
 
 @media screen and (max-width: 830px) {

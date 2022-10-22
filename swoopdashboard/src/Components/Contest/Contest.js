@@ -1,44 +1,48 @@
 import React from "react";
 import styles from "./Contest.module.css";
-import leftArrow from "../../images/leftArrow.svg";
 import { useNavigate } from "react-router-dom";
+import prev from "../../images/prev.svg";
+import nfthand from "../../images/nfthand (1).png";
+import coin from "../../images/Swoop xp coin1.png";
+
+import Navbar from "../Navbar/Navbar";
 
 function Contest() {
     const navigate = useNavigate();
   return (
     <div class={styles.contest}>
       <div className={styles.header}>
-      <img src={leftArrow} alt="left" onClick={() => window.history.back()}/>
-        Contest ID 1
-      </div>
+        <img src={prev} alt="left" onClick={() => window.history.back()}/><Navbar />
+        </div>
       <div className={styles.formL}>
+        <div className={styles.contestName}> Contest Id 1</div>
           <form className={styles.contestForm}>
             <div className={styles.nameFee}>
                 <div className={styles.child}>
                     <label htmlFor="contestName">Contest Name</label>
-                    <input type="text" id="contestName" name="contestName" />
+                    <input value="1 DOLLAR SWOOP" type="text" id="contestName" name="contestName" />
                 </div>
                 <div className={styles.child}>
-                    <label htmlFor="participationFee">Participation Fee</label>
-                    <input type="text" id="participationFee" name="participationFee" />
+                    <label htmlFor="participationFee">Participation Fee <img style={{height: "25px"}} src={nfthand} alt="nfthand" /></label>
+                    <input value="1 USDC" type="text" id="participationFee" name="participationFee" />
                 </div>
             </div>
             <div className={styles.keyNFT}>
                 <div className={styles.child}>
                     <label htmlFor="contestKey">Key</label>
-                    <input type="text" id="contestKey" name="contestKey" />
+                    <input value="aainfi3b2ib3ibibi3bq3lorem" type="text" id="contestKey" name="contestKey" readOnly/>
                 </div>
                 <div className={styles.child}>
                     <label htmlFor="nftDiscount">NFT Owner Discount</label>
-                    <input type="text" id="nftDiscount" name="nftDiscount" />
+                    <input value="1 USDC" type="text" id="nftDiscount" name="nftDiscount" />
                 </div>
                 <div className={styles.child}>
-                    <label htmlFor="xpDiscount">Swoop XP Discount</label>
-                    <input type="text" id="xpDiscount" name="xpDiscount" />
+                    <label style={{display:"flex",alignItems:"center"}} htmlFor="xpDiscount">Swoop XP Discount <img src={coin} alt="coin" /></label>
+                    <input value="1 USDC" type="text" id="xpDiscount" name="xpDiscount" />
                 </div>
                 <div className={styles.child}>
                     <label htmlFor="stakers">Stakers</label>
-                    <input type="text" id="stakers" name="stakers" />
+                    <input value="aainfi3b2ib3ibibi3bq3lorem" type="text" id="stakers" name="stakers" readOnly/>
                 </div>
             </div>
           </form>
