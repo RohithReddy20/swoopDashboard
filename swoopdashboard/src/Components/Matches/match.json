@@ -1,0 +1,341 @@
+{
+    "success": true,
+    "data": [
+        {
+            "teams": {
+                "b": {
+                    "country_code": "LKA",
+                    "blurhash": "LgPi95j[.Toej[fQj[az*0j[xwa#",
+                    "code": "SL",
+                    "name": "Sri Lanka",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/swoop-fc-prod.appspot.com/o/assets%2Ftournaments%2Fasiacup_2022%2Fsl%2Fsl.png?alt=media",
+                    "key": "sl"
+                },
+                "a": {
+                    "url": "https://firebasestorage.googleapis.com/v0/b/swoop-fc-prod.appspot.com/o/assets%2Ftournaments%2Fnztriseries_2022%2Fnz%2Fnz.png?alt=media",
+                    "blurhash": "LGQJfm4n~q%Mof-;j[fQ%M_3ofD%",
+                    "country_code": "NZL",
+                    "name": "New Zealand",
+                    "key": "nz",
+                    "code": "NZ"
+                }
+            },
+            "name": "New Zealand vs Sri Lanka",
+            "teams_announcement_notification": {
+                "is_notified": false
+            },
+            "teams_announced": false,
+            "key": "icc_wc_t20_2022_g27",
+            "start_at": {
+                "_seconds": 1667030400,
+                "_nanoseconds": 0
+            },
+            "venue": {
+                "name": "Sydney Cricket Ground",
+                "key": "c__stadium__sydney_cricket_ground__c1c68",
+                "city": "Sydney",
+                "country": {
+                    "official_name": "the Commonwealth of Australia",
+                    "is_region": false,
+                    "name": "Australia",
+                    "code": "AUS",
+                    "short_code": "AU"
+                }
+            },
+            "status": "not_started",
+            "roanuz_subscribed": true,
+            "total_winnings": 48955,
+            "gender": "male",
+            "short_name": "NZ vs SL",
+            "tournament": {
+                "name": "ICC Men's T20 World Cup 2022",
+                "key": "icc_wc_t20_2022",
+                "short_name": "ICCWCT20 2022"
+            },
+            "sub_title": "27th Match, Super 12 Group 1",
+            "num_contests": 11,
+            "format": "t20",
+            "num_teams_submitted": 0
+        },
+        {
+            "total_winnings": 48955,
+            "teams_announcement_notification": {
+                "is_notified": false
+            },
+            "tournament": {
+                "short_name": "ICCWCT20 2022",
+                "key": "icc_wc_t20_2022",
+                "name": "ICC Men's T20 World Cup 2022"
+            },
+            "num_teams_submitted": 0,
+            "num_contests": 11,
+            "roanuz_subscribed": true,
+            "teams": {
+                "a": {
+                    "key": "ban",
+                    "blurhash": "LlOyz~R*_4xtkXWVtRs:?aofNwR*",
+                    "country_code": "BGD",
+                    "name": "Bangladesh",
+                    "code": "BAN",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/swoop-fc-prod.appspot.com/o/assets%2Ftournaments%2Fnztriseries_2022%2Fban%2Fban.png?alt=media"
+                },
+                "b": {
+                    "url": "https://firebasestorage.googleapis.com/v0/b/swoop-fc-prod.appspot.com/o/assets%2Ftournaments%2Fzimind_2022%2Fzim%2Fzim.png?alt=media",
+                    "code": "ZIM",
+                    "key": "zim",
+                    "country_code": "ZWE",
+                    "blurhash": "LkNmWTMnt8kQ0zxFoLNGO[t2WBRk",
+                    "name": "Zimbabwe"
+                }
+            },
+            "format": "t20",
+            "short_name": "BAN vs ZIM",
+            "gender": "male",
+            "status": "not_started",
+            "name": "Bangladesh vs Zimbabwe",
+            "teams_announced": false,
+            "sub_title": "28th Match, Super 12 Group 2",
+            "key": "icc_wc_t20_2022_g28",
+            "venue": {
+                "key": "c__stadium__the_gabba__39aa1",
+                "name": "The Gabba",
+                "country": {
+                    "code": "AUS",
+                    "is_region": false,
+                    "name": "Australia",
+                    "short_code": "AU",
+                    "official_name": "the Commonwealth of Australia"
+                },
+                "city": "Brisbane"
+            },
+            "start_at": {
+                "_seconds": 1667098800,
+                "_nanoseconds": 0
+            }
+        },
+        {
+            "num_teams_submitted": 0,
+            "teams_announced": false,
+            "start_at": {
+                "_seconds": 1667113200,
+                "_nanoseconds": 0
+            },
+            "gender": "male",
+            "tournament": {
+                "key": "icc_wc_t20_2022",
+                "name": "ICC Men's T20 World Cup 2022",
+                "short_name": "ICCWCT20 2022"
+            },
+            "format": "t20",
+            "status": "not_started",
+            "venue": {
+                "name": "Perth Stadium",
+                "country": {
+                    "is_region": false,
+                    "short_code": "AU",
+                    "code": "AUS",
+                    "official_name": "the Commonwealth of Australia",
+                    "name": "Australia"
+                },
+                "key": "c__stadium__perth_stadium__c6af4",
+                "city": "Perth"
+            },
+            "name": "Pakistan vs Netherlands",
+            "teams": {
+                "a": {
+                    "key": "pak",
+                    "code": "PAK",
+                    "name": "Pakistan",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/swoop-fc-prod.appspot.com/o/assets%2Ftournaments%2Fnztriseries_2022%2Fpak%2Fpak.png?alt=media",
+                    "blurhash": "LPQS}2oL?wt7,[ay-;j[yEofIAay",
+                    "country_code": "PAK"
+                },
+                "b": {
+                    "url": "https://firebasestorage.googleapis.com/v0/b/swoop-fc-prod.appspot.com/o/assets%2Ftournaments%2Fnlnz_2022%2Fnl%2Fnl.png?alt=media",
+                    "key": "nl",
+                    "code": "NL",
+                    "country_code": "NLD",
+                    "blurhash": "LpSOK:%hlom+bcoebci_t,XSiwV@",
+                    "name": "Netherlands"
+                }
+            },
+            "total_winnings": 48955,
+            "sub_title": "29th Match, Super 12 Group 2",
+            "num_contests": 11,
+            "key": "icc_wc_t20_2022_g29",
+            "teams_announcement_notification": {
+                "is_notified": false
+            },
+            "roanuz_subscribed": true,
+            "short_name": "PAK vs NL"
+        },
+        {
+            "teams_announcement_notification": {
+                "is_notified": false
+            },
+            "format": "t20",
+            "status": "not_started",
+            "num_contests": 11,
+            "roanuz_subscribed": true,
+            "gender": "male",
+            "total_winnings": 48955,
+            "num_teams_submitted": 0,
+            "tournament": {
+                "key": "icc_wc_t20_2022",
+                "name": "ICC Men's T20 World Cup 2022",
+                "short_name": "ICCWCT20 2022"
+            },
+            "short_name": "IND vs RSA",
+            "name": "India vs South Africa",
+            "teams_announced": false,
+            "key": "icc_wc_t20_2022_g30",
+            "start_at": {
+                "_seconds": 1667127600,
+                "_nanoseconds": 0
+            },
+            "teams": {
+                "b": {
+                    "code": "RSA",
+                    "name": "South Africa",
+                    "key": "rsa",
+                    "country_code": "ZAF",
+                    "blurhash": "LbQc#Lac~XS6oaoJa$Wr-qWrM{xa",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/swoop-fc-prod.appspot.com/o/assets%2Ftournaments%2Findrsas2_2022%2Frsa%2Frsa.png?alt=media"
+                },
+                "a": {
+                    "country_code": "IND",
+                    "name": "India",
+                    "blurhash": "LOF~EhoL8^jafkfQj?fQ8^ayOZfP",
+                    "key": "ind",
+                    "code": "IND",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/swoop-fc-prod.appspot.com/o/assets%2Ftournaments%2Findrsas2_2022%2Find%2Find.png?alt=media"
+                }
+            },
+            "sub_title": "30th Match, Super 12 Group 2",
+            "venue": {
+                "key": "c__stadium__perth_stadium__c6af4",
+                "country": {
+                    "short_code": "AU",
+                    "code": "AUS",
+                    "official_name": "the Commonwealth of Australia",
+                    "name": "Australia",
+                    "is_region": false
+                },
+                "name": "Perth Stadium",
+                "city": "Perth"
+            }
+        },
+        {
+            "total_winnings": 48955,
+            "venue": {
+                "key": "c__stadium__the_gabba__39aa1",
+                "country": {
+                    "name": "Australia",
+                    "code": "AUS",
+                    "official_name": "the Commonwealth of Australia",
+                    "short_code": "AU",
+                    "is_region": false
+                },
+                "name": "The Gabba",
+                "city": "Brisbane"
+            },
+            "name": "Australia vs Ireland",
+            "teams_announced": false,
+            "num_contests": 11,
+            "status": "not_started",
+            "sub_title": "31st Match, Super 12 Group 1",
+            "short_name": "AUS vs IRE",
+            "teams": {
+                "a": {
+                    "blurhash": "LfK.FW?Z^-IX4-%LE1WV%PWGt3%2",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/swoop-fc-prod.appspot.com/o/assets%2Ftournaments%2Fauseng_2022%2Faus%2Faus.png?alt=media",
+                    "name": "Australia",
+                    "country_code": "AUS",
+                    "code": "AUS",
+                    "key": "aus"
+                },
+                "b": {
+                    "blurhash": "LaQ,UNj[~Xj[x@j[oNayRkf7R%j[",
+                    "code": "IRE",
+                    "key": "ire",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/swoop-fc-prod.appspot.com/o/assets%2Ftournaments%2Fireafg_2022%2Fire%2Fire.png?alt=media",
+                    "country_code": "IRL",
+                    "name": "Ireland"
+                }
+            },
+            "tournament": {
+                "key": "icc_wc_t20_2022",
+                "name": "ICC Men's T20 World Cup 2022",
+                "short_name": "ICCWCT20 2022"
+            },
+            "key": "icc_wc_t20_2022_g31",
+            "gender": "male",
+            "format": "t20",
+            "roanuz_subscribed": true,
+            "teams_announcement_notification": {
+                "is_notified": false
+            },
+            "num_teams_submitted": 0,
+            "start_at": {
+                "_seconds": 1667203200,
+                "_nanoseconds": 0
+            }
+        },
+        {
+            "key": "icc_wc_t20_2022_g32",
+            "tournament": {
+                "key": "icc_wc_t20_2022",
+                "short_name": "ICCWCT20 2022",
+                "name": "ICC Men's T20 World Cup 2022"
+            },
+            "gender": "male",
+            "teams": {
+                "a": {
+                    "key": "afg",
+                    "name": "Afghanistan",
+                    "country_code": "AFG",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/swoop-fc-prod.appspot.com/o/assets%2Ftournaments%2Fasiacup_2022%2Fafg%2Fafg.png?alt=media",
+                    "blurhash": "LKRyjDog?dX8t,ayM{oLyEfk%2n*",
+                    "code": "AFG"
+                },
+                "b": {
+                    "code": "SL",
+                    "key": "sl",
+                    "name": "Sri Lanka",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/swoop-fc-prod.appspot.com/o/assets%2Ftournaments%2Fasiacup_2022%2Fsl%2Fsl.png?alt=media",
+                    "country_code": "LKA",
+                    "blurhash": "LgPi95j[.Toej[fQj[az*0j[xwa#"
+                }
+            },
+            "teams_announced": false,
+            "sub_title": "32nd Match, Super 12 Group 1",
+            "num_contests": 11,
+            "format": "t20",
+            "teams_announcement_notification": {
+                "is_notified": false
+            },
+            "short_name": "AFG vs SL",
+            "roanuz_subscribed": true,
+            "total_winnings": 48955,
+            "venue": {
+                "city": "Brisbane",
+                "country": {
+                    "is_region": false,
+                    "name": "Australia",
+                    "short_code": "AU",
+                    "official_name": "the Commonwealth of Australia",
+                    "code": "AUS"
+                },
+                "key": "c__stadium__the_gabba__39aa1",
+                "name": "The Gabba"
+            },
+            "status": "not_started",
+            "name": "Afghanistan vs Sri Lanka",
+            "num_teams_submitted": 0,
+            "start_at": {
+                "_seconds": 1667275200,
+                "_nanoseconds": 0
+            }
+        }
+    ]
+}

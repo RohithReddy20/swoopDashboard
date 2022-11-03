@@ -9,7 +9,7 @@ import logo from "../../images/swooplogo.svg"
 
 function Login() {
 
-  const { userName, password, setUserName, setPassword, setUser, user, login } = useAuth();
+  const { setUser, user, login } = useAuth();
   const [disabled, setDisabled] = useState(false);
 
   const navigate = useNavigate();
@@ -34,8 +34,8 @@ function Login() {
           <div>Login</div>
           <div className="form">
             <form onSubmit={handleForm}>
-              <input type="text" onChange={(e) => {setUserName(e.target.value)}}  placeholder="Enter Email" />
-              <input type="text" onChange={(e) => {setPassword(e.target.value)}}  placeholder="Password" />
+              <input type="text" id="login_id"  placeholder="Enter Email" />
+              <input type="password" id="login_password" autoComplete='on'  placeholder="Password" />
               <div><input type="submit" value="LOGIN" disabled={disabled} /></div>
             </form>
           </div>

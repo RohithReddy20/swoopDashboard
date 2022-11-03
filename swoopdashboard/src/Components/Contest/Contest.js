@@ -1,6 +1,5 @@
-import React from "react";
 import styles from "./Contest.module.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import prev from "../../images/prev.svg";
 import nfthand from "../../images/nfthand (1).png";
 import coin from "../../images/Swoop xp coin1.png";
@@ -9,6 +8,13 @@ import Navbar from "../Navbar/Navbar";
 
 function Contest() {
   const navigate = useNavigate();
+
+  const location = useLocation();
+  const contest = location.state.contest
+  if(!contest?.entry_fees){
+    contest["entry_fees"] = 0;
+  }
+
   return (
     <div class={styles.contest}>
       <div className={styles.header}>
@@ -16,13 +22,13 @@ function Contest() {
         <Navbar />
       </div>
       <div className={styles.formL}>
-        <div className={styles.contestName}> Contest Id 1</div>
+        <div className={styles.contestName}> Contest Id {location.state.index+1}</div>
         <form className={styles.contestForm}>
           <div className={styles.nameFee}>
             <div className={styles.child}>
               <label htmlFor="contestName">Contest Name</label>
               <input
-                value="1 DOLLAR SWOOP"
+                value={contest.name}
                 type="text"
                 id="contestName"
                 name="contestName"
@@ -34,7 +40,7 @@ function Contest() {
                 <img style={{ height: "25px" }} src={nfthand} alt="nfthand" />
               </label>
               <input
-                value="1 USDC"
+                value={`${contest?.entry_fees ? contest.entry_fees:0} USDC`}
                 type="text"
                 id="participationFee"
                 name="participationFee"
@@ -55,7 +61,7 @@ function Contest() {
             <div className={styles.child}>
               <label htmlFor="nftDiscount">NFT Owner Discount</label>
               <input
-                value="1 USDC"
+                value={`${(contest.entry_fees*contest.nft_owner_discount_percentage)/100} USDC`}
                 type="text"
                 id="nftDiscount"
                 name="nftDiscount"
@@ -69,7 +75,7 @@ function Contest() {
                 Swoop XP Discount <img src={coin} alt="coin" />
               </label>
               <input
-                value="1 USDC"
+                value={`${(contest.entry_fees*contest.swoopxp_max_discount_percentage)/100} USDC`}
                 type="text"
                 id="xpDiscount"
                 name="xpDiscount"
