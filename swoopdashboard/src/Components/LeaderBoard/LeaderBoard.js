@@ -1,20 +1,11 @@
 import React, { useState } from "react";
 import styles from "./Leaderboard.module.css";
-import Credit from "./Credit";
-import Modal from "@mui/material/Modal";
-import Box from '@mui/material/Box';
 
 import prev from "../../images/prev.svg";
 import Navbar from "../Navbar/Navbar";
 
 import Cstyles from "../Contest/Contest.module.css"
 
-const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)'
-};
 
 function LeaderBoard() {
   const [openCredit, setOpenCredit] = useState(false);

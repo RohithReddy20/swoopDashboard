@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import styles from "./Matches.module.css";
 import logo from "../../images/swooplogo.svg";
 import swoop from "../../images/swoop.svg";
@@ -8,14 +8,33 @@ import { useAuth } from "../../hooks/useAuth";
 import Navbar from "../Navbar/Navbar";
 import Timer from "./Timer";
 
+import Modal from "@mui/material/Modal";
+import Box from '@mui/material/Box';
+import AddMatch from "./AddMatch";
+
 function Matches() {
   const navigate = useNavigate();
+
+  const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+  };
 
   const { viewlog, getMatches, matches } = useAuth();
 
   const toContests = (matchId) => {
     navigate('/contests/' , {state: {matchId:matchId}})
   }
+
+  const [openCredit, setOpenCredit] = useState(false);
+  const handleOpenCredit = () => {
+    setOpenCredit(true);
+  };
+  const handleCloseCredit = () => {
+    setOpenCredit(false);
+  };
 
   useEffect(() => {
     getMatches();
@@ -68,10 +87,17 @@ function Matches() {
         <div className={styles.addMatch}>
           <div>
             <img src={plus} alt="plus" />
-            <p>ADD MATCH</p>
+            <p onClick={() => {
+              setOpenCredit(true);
+            }}>ADD MATCH</p>
           </div>
         </div>
       </div>
+      <Modal open={openCredit} onClose={handleCloseCredit}>
+          <Box sx={style}>
+          <AddMatch handleCloseCredit={handleCloseCredit} />
+          </Box>
+        </Modal>
     </div>
   );
 }

@@ -1,4 +1,3 @@
-
 .matchesInfo {
   background: #edf2f7;
   margin: 0 auto;
@@ -23,7 +22,7 @@
 }
 
 .match {
-      box-shadow: 0px 2px 8px 0px rgb(183 188 244);
+  box-shadow: 0px 2px 8px 0px rgb(183 188 244);
   /* width: min(394px, 90%); */
   border-radius: 20px;
   display: flex;
@@ -34,7 +33,7 @@
   margin: 10px auto;
 }
 
-.match > div{
+.match > div {
   margin: 0 5px;
 }
 
@@ -45,7 +44,12 @@
   margin: 0 50px 0 30px;
 }
 
-.matchInfo, .msP, .cwl, .vwl, .ub, .cp{
+.matchInfo,
+.msP,
+.cwl,
+.vwl,
+.ub,
+.cp {
   height: 60px;
   border-radius: 19px;
   color: #fff;
@@ -58,29 +62,29 @@
   width: 208px;
 }
 
-.msP{
+.msP {
   width: 123px;
-  background: #44429F;
+  background: #44429f;
 }
 
-.cwl{
+.cwl {
   width: 131px;
-  background: linear-gradient(312.63deg, #7928B9 20.94%, #E39217 85.1%);
+  background: linear-gradient(312.63deg, #7928b9 20.94%, #e39217 85.1%);
 }
 
-.vwl{
+.vwl {
   width: 123px;
-  background: linear-gradient(92.78deg, #EB3349 -0.35%, #F45C43 98.87%);
+  background: linear-gradient(92.78deg, #eb3349 -0.35%, #f45c43 98.87%);
 }
 
-.ub{
+.ub {
   width: 89px;
-  background: linear-gradient(159.13deg, #D94058 22.85%, #892BC2 94.83%);
+  background: linear-gradient(159.13deg, #d94058 22.85%, #892bc2 94.83%);
 }
 
-.cp{
+.cp {
   width: 89px;
-  background: linear-gradient(111.72deg, #039900 -13.49%, #A7EE33 123.47%);
+  background: linear-gradient(111.72deg, #039900 -13.49%, #a7ee33 123.47%);
 }
 
 .teams {
@@ -119,19 +123,42 @@
   gap: 10px;
 }
 
-.addMatch > div >img{
-    height: 25px;
+.addMatch > div > img {
+  height: 25px;
 }
 
-.addMatch > div > p{
-    font-weight: 800;
-font-size: 21px;
-line-height: 29px;
-letter-spacing: 0.1em;
+.addMatch > div > p {
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
 }
 
 @media screen and (max-width: 830px) {
-  .matchesList{
+  .matchesList {
     grid-template-columns: 1fr;
   }
+}
+
+.addMatchC {
+  height: 200px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 10px;
+  gap: 30px
+}
+
+.add {
+  background: #211f58;
+  color: #fff;
+  border: none;
+  margin: 10px;
+  height: 40px;
+  width: 100px;
+  font-size: 17px;
+  border-radius: 5px;
 }
