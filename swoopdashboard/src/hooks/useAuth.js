@@ -27,15 +27,19 @@ export const AuthProvider = ({ children }) => {
         body: JSON.stringify(data),
       }
     )
-      .then((response) => response.json())
+      .then((response) => {
+        if(response.status!==200){
+          return NaN
+        }
+       return response.json()})
       .then((data) => {
         // console.log(data)
-        setUser({
+        if(data){setUser({
           userName: document.getElementById("login_id").value,
           password: document.getElementById("login_password").value,
           accessToken: data["data"]["access_token"],
         });
-        navigate("/matches");
+        navigate("/matches");}
       });
   };
 

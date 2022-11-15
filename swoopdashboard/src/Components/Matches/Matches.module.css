@@ -55,6 +55,7 @@
   color: #fff;
   display: grid;
   align-items: center;
+  cursor: pointer;
 }
 
 .matchInfo {
@@ -149,7 +150,7 @@
   justify-content: center;
   background: #fff;
   border-radius: 10px;
-  gap: 30px
+  gap: 30px;
 }
 
 .add {
@@ -161,4 +162,8 @@
   width: 100px;
   font-size: 17px;
   border-radius: 5px;
+}
+
+.addBannerButton .MuiButtonBase-root,.addBannerButton .MuiButtonBase-root:hover{
+  background-color: #211f58 !important;
 }

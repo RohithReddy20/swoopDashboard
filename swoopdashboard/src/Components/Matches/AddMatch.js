@@ -1,30 +1,30 @@
-import { useState } from "react"
-import { useAuth } from "../../hooks/useAuth"
+import { useState } from "react";
+import { useAuth } from "../../hooks/useAuth";
 
-import TextField from '@mui/material/TextField';
-import CircularProgress from '@mui/material/CircularProgress';
-import Box from '@mui/material/Box';
+import TextField from "@mui/material/TextField";
+import CircularProgress from "@mui/material/CircularProgress";
+import Box from "@mui/material/Box";
 
 import styles from "./Matches.module.css";
 
 import AlertParent from "../Alert/Alert";
 import { StyledEngineProvider } from "@mui/material/styles";
 
-
-function AddMatch({handleCloseCredit}) {
+function AddMatch({ handleCloseCredit }) {
   const [matchId, setMatchId] = useState("");
 
   const { user, getMatches } = useAuth();
 
   const fail = () => {
     setType("error");
-    setResult("Failed to add match")
-    setInProgress(false)
-  }
+    setResult("Failed to add match");
+    setInProgress(false);
+  };
 
   const addMatch = async (match_id) => {
     await fetch(
-      "https://asia-south1-swoop-fc-prod.cloudfunctions.net/dashboard/match/add-roanuz?match_key="+match_id,
+      "https://asia-south1-swoop-fc-prod.cloudfunctions.net/dashboard/match/add-roanuz?match_key=" +
+        match_id,
       {
         method: "POST",
         headers: {
@@ -34,52 +34,64 @@ function AddMatch({handleCloseCredit}) {
       }
     )
       .then((response) => {
-        response.json()}).then(data => {
-          if(!data.success) {
-           fail()
-          }
-          if(data.success){
-            getMatches();
-            document.querySelector(`.${styles.addMatchC}`).style.display = "none"
-          }
-        }).catch((err) => {
+        response.json();
+      })
+      .then((data) => {
+        if (!data.success) {
           fail();
+        }
+        if (data.success) {
+          getMatches();
+          setOpen(false);
+        }
+      })
+      .catch((err) => {
+        fail();
       });
   };
 
-const [open, setOpen] = useState(false);
-const [type, setType] = useState("success");
-const [result, setResult] = useState("Message sent successfully");
-const [inProgress, setInProgress] = useState(false)
+  const [open, setOpen] = useState(false);
+  const [type, setType] = useState("success");
+  const [result, setResult] = useState("Message sent successfully");
+  const [inProgress, setInProgress] = useState(false);
 
-const handleClick = () => {
-  setOpen(true);
-};
+  const handleClick = () => {
+    setOpen(true);
+  };
 
-const handleClose = (event, reason) => {
-  if (reason === "clickaway") {
-    return;
-  }
-  setOpen(false);
-};
-  
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpen(false);
+  };
+
   return (
-    <>
+    <div style={{ height: "100%" }}>
       <div className={styles.addMatchC}>
-           <TextField
-            required
-            id="outlined-required"
-            label="Match Id"
-            onChange={(e) => setMatchId(e.target.value)}
-            value={matchId}
-          />
-          {!inProgress ? <button onClick={async() => {
-            setInProgress(true)
-            await addMatch(matchId);
-            handleClick()
-          }} className={styles.add}>Add Match</button>: <Box sx={{ display: 'flex' }}>
-          <CircularProgress />
-        </Box>}
+        <TextField
+          required
+          id="outlined-required"
+          label="Match Id"
+          onChange={(e) => setMatchId(e.target.value)}
+          value={matchId}
+        />
+        {!inProgress ? (
+          <button
+            onClick={async () => {
+              setInProgress(true);
+              await addMatch(matchId);
+              handleClick();
+            }}
+            className={styles.add}
+          >
+            Add Match
+          </button>
+        ) : (
+          <Box sx={{ display: "flex" }}>
+            <CircularProgress />
+          </Box>
+        )}
       </div>
       <StyledEngineProvider injectFirst>
         <AlertParent
@@ -91,8 +103,8 @@ const handleClose = (event, reason) => {
           result={result}
         />
       </StyledEngineProvider>
-    </>
-  )
+    </div>
+  );
 }
 
-export default AddMatch
+export default AddMatch;
