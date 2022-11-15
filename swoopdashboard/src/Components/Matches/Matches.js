@@ -92,16 +92,15 @@ function Matches() {
               );
             })}
         </div>
-        <div className={styles.addMatch}>
+        <div
+          onClick={() => {
+            setOpenCredit(true);
+          }}
+          className={styles.addMatch}
+        >
           <div>
             <img src={plus} alt="plus" />
-            <p
-              onClick={() => {
-                setOpenCredit(true);
-              }}
-            >
-              ADD MATCH
-            </p>
+            <p>ADD MATCH</p>
           </div>
         </div>
       </div>
@@ -111,7 +110,9 @@ function Matches() {
         </Box>
       </Modal>
 
-      {openBanner && <AddBanner openBanner={openBanner} setOpenBanner={setOpenBanner} />}
+      {openBanner && (
+        <AddBanner openBanner={openBanner} setOpenBanner={setOpenBanner} />
+      )}
     </div>
   );
 }
