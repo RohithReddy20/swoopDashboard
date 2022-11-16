@@ -20,8 +20,6 @@ import Navbar from './Components/Navbar/Navbar';
 
 import { useLocation } from 'react-router-dom';
 
-
-
 function App() {
 
   const location = useLocation();
@@ -32,6 +30,7 @@ function App() {
     }else{
       if(document.querySelector('.sdnrou'))document.querySelector('.sdnrou').style.display = 'flex';
     }
+
   },[location.pathname])
 
   return (
