@@ -1,9 +1,10 @@
 .matchesInfo {
   background: #edf2f7;
-  margin: 0 auto;
-  border-radius: 30px;
-  padding-bottom: 20px;
+  /* margin: 0 auto; */
+  border-radius: 30px 0 0 0;
+  /* padding-bottom: 20px; */
   height: 100%;
+  width: calc(100vw - 289px);
 }
 
 .matchesInfo .title {
@@ -49,7 +50,8 @@
 .cwl,
 .vwl,
 .ub,
-.cp {
+.cp,
+.thd {
   height: 60px;
   border-radius: 19px;
   color: #fff;
@@ -65,26 +67,37 @@
 
 .msP {
   width: 123px;
-  background: #44429f;
+  background:  #183D9D;
 }
 
 .cwl {
   width: 131px;
-  background: linear-gradient(312.63deg, #7928b9 20.94%, #e39217 85.1%);
+  background: #3365E5;
+}
+
+.thd{
+  width:80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .vwl {
   width: 123px;
-  background: linear-gradient(92.78deg, #eb3349 -0.35%, #f45c43 98.87%);
+  background:  #183D9D;
 }
 
 .ub {
-  width: 89px;
-  background: linear-gradient(159.13deg, #d94058 22.85%, #892bc2 94.83%);
+  width: 120px;
+  background: #fff;
+  border: 4px solid #3365E5;
+  color: #183D9D;
+  font-weight: 800;
+font-size: 16px;
 }
 
 .cp {
-  width: 89px;
+  width: 120px;
   background: linear-gradient(111.72deg, #039900 -13.49%, #a7ee33 123.47%);
 }
 

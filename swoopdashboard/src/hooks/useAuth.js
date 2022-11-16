@@ -49,14 +49,14 @@ export const AuthProvider = ({ children }) => {
     navigate("/", { replace: true });
   };
 
-  const viewlog = async () => {
+  const createViewLog = async (match_key) => {
     await fetch(
-      "https://asia-south1-swoop-fc-prod.cloudfunctions.net/dashboard/match/winnings/view-log?match_key=icc_wc_t20_2022_g6",
+      "https://asia-south1-swoop-fc-prod.cloudfunctions.net/dashboard/match/winnings/create-log?match_key="+match_key,
       {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "User-Agent": "Thunder Client (http://www.thunderclient.com)",
+          
           "x-access-token": user?.accessToken,
         },
         // body: JSON.stringify(data)
@@ -68,7 +68,59 @@ export const AuthProvider = ({ children }) => {
         }
         response.json()})
       .then((data) => {
-        setParticipants(data?.all);
+      })
+      .catch((err) => {
+        setUser(null);
+        navigate("/");
+      });
+  };
+
+
+  const viewlog = async (match_key) => {
+    await fetch(
+      "https://asia-south1-swoop-fc-prod.cloudfunctions.net/dashboard/match/winnings/view-log?match_key="+match_key,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          
+          "x-access-token": user?.accessToken,
+        },
+        // body: JSON.stringify(data)
+      }
+    )
+      .then((response) => {
+        if(response.status!==200){
+          setUser(null);
+        }
+        response.json()})
+      .then((data) => {
+      })
+      .catch((err) => {
+        setUser(null);
+        navigate("/");
+      });
+  };
+
+  const processWinnigLog = async (match_key) => {
+    await fetch(
+      "https://asia-south1-swoop-fc-prod.cloudfunctions.net/dashboard/match/winnings/process?match_key="+match_key,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          
+          "x-access-token": user?.accessToken,
+        },
+        // body: JSON.stringify(data)
+      }
+    )
+      .then((response) => {
+        if(response.status!==200){
+          setUser(null);
+        }
+        response.json()})
+      .then((data) => {
       })
       .catch((err) => {
         setUser(null);
@@ -146,6 +198,7 @@ export const AuthProvider = ({ children }) => {
       matches,
       getContests,
       contests,
+      createViewLog
     }),
     [user, matches, contests]
   );

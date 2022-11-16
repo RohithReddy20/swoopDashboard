@@ -6,7 +6,7 @@ import SendIcon from '@mui/icons-material/Send';
 
 import styles from "./Matches.module.css";
 
-import AlertParent from "../Alert/Alert";
+import AlertParent from "../../Components/Alert/Alert";
 import { StyledEngineProvider } from "@mui/material/styles";
 
 function AddBanner({ openBanner, setOpenBanner }) {

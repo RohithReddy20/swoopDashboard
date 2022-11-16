@@ -17,10 +17,10 @@ function Contest() {
 
   return (
     <div class={styles.contest}>
-      <div className={styles.header}>
+      {/* <div className={styles.header}>
         <img src={prev} alt="left" onClick={() => window.history.back()} />
         <Navbar />
-      </div>
+      </div> */}
       <div className={styles.formL}>
         <div className={styles.contestName}> Contest Id {location.state.index+1}</div>
         <form className={styles.contestForm}>

@@ -7,7 +7,7 @@ import Box from "@mui/material/Box";
 
 import styles from "./Matches.module.css";
 
-import AlertParent from "../Alert/Alert";
+import AlertParent from "../../Components/Alert/Alert";
 import { StyledEngineProvider } from "@mui/material/styles";
 
 function AddMatch({ handleCloseCredit }) {

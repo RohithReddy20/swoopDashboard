@@ -19,10 +19,10 @@ function LeaderBoard() {
   return (
     <div className={`${styles.leaderBoard} leaderBoard`}>
       <div className={styles.lbh}>
-        <div className={styles.header}>
+        {/* <div className={styles.header}>
         <img src={prev} alt="left" onClick={() => window.history.back()} />
           <Navbar />
-        </div>
+        </div> */}
         <div className={styles.title}>LEADERBOARD</div>
       </div>
       <div className={styles.leaderBoardInfo}>

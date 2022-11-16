@@ -4,9 +4,13 @@
   text-align: center;
   font-family: 'Manrope', sans-serif !important;
   background-image: linear-gradient(359.94deg, #6ddbf5 -1.64%, #603dde 89.87%);
-  height: max(100vh);
+  height: 100%;
 }
 
 .MuiBox-root[class*="css"]:focus{
   outline: 0 !important;
+}
+
+.sdnrou{
+  display: block;
 }

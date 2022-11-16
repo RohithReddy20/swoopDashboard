@@ -22,9 +22,9 @@ function Contests({}) {
 
   return (
     <div className={styles.matches}>
-        <div className={styles.header}>
+        {/* <div className={styles.header}>
         <img src={prev} alt="left" onClick={() => window.history.back()}/><Navbar />
-        </div>
+        </div> */}
         <div className={styles.matchesInfo}>
             <div className={styles.title}>Active Contests</div>
             <div className={styles.matchesList}>
